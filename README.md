@@ -13,6 +13,7 @@ Familiar with Docker? A [docker image](https://registry.hub.docker.com/u/jacobsa
 QuickStart
 -----------
 1. Clone this repository
+        
         yum install tar wget m2crypto python-setuptools gcc git -y
         easy_install pip
         git clone git://github.com/JacobSanford/route-53-dyndns.git
