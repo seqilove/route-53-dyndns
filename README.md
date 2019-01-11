@@ -13,7 +13,8 @@ Familiar with Docker? A [docker image](https://registry.hub.docker.com/u/jacobsa
 QuickStart
 -----------
 1. Clone this repository
-
+        yum install tar wget m2crypto python-setuptools gcc git -y
+        easy_install pip
         git clone git://github.com/JacobSanford/route-53-dyndns.git
         cd route-53-dyndns
 
@@ -29,7 +30,7 @@ QuickStart
 
 4. Run the script
 
-        ./r53dyndns.py -U http://www.whatismyip.com/ -R example.domain.com
+        ./r53dyndns.py -U http://checkip.amazonaws.com/ -R example.domain.com
 
 
 Running as a 'Service'
@@ -45,7 +46,7 @@ system.
         export AWS_ACCESS_KEY_ID=""
         export AWS_SECRET_ACCESS_KEY=""
         export AWS_CONNECTION_REGION="us-east-1"
-        /var/opt/route-53-dyndns/r53dyndns.py -U http://www.whatismyip.com/ -R example.domain.com
+        /var/opt/route-53-dyndns/r53dyndns.py -U http://checkip.amazonaws.com/ -R example.domain.com
 
 2. Create a calling script
 
